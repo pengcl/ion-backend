@@ -6,13 +6,13 @@
         <form [formGroup]="form" class="auth-form">
             <mat-form-field>
                 <mat-label>用户名</mat-label>
-                <input matInput placeholder="State" aria-label="State" [formControlName]="identifier">
+                <input matInput placeholder="State" aria-label="State" formControlName="identifier">
             </mat-form-field>
             <mat-form-field>
                 <mat-label>密码</mat-label>
-                <input type="password" [formControlName]="password" matInput placeholder="请输入手机号">
+                <input type="password" formControlName="password" matInput placeholder="请输入手机号">
             </mat-form-field>
-            <mat-checkbox class="example-margin" [formControlName]="remember">记住密码</mat-checkbox>
+            <mat-checkbox class="example-margin" formControlName="remember">记住密码</mat-checkbox>
             <button (click)="login()" type="button" mat-raised-button color="primary">登录</button>
         </form>
     </mat-card-content>
